@@ -1,0 +1,26 @@
+[package]
+name = "ttm-rs"
+version = "0.1.0"
+authors = ["Kevin Donahue <nonnontrivial@gmail.com>"]
+edition = "2018"
+readme = "README.md"
+description = "CLI to turn tuples into adjacency matrices"
+keywords = ["digraph", "tuple", "matrix", "cli"]
+license = "MIT"
+homepage = "https://github.com/nonnontrivial/ttm-rs"
+repository = "https://github.com/nonnontrivial/ttm-rs.git"
+categories = ["command-line-utilities", "data-structures", "file-system"]
+
+[dependencies]
+structopt = "0.3"
+ndarray = "0.13.0"
+anyhow = "1.0"
+
+[build-dependencies]
+structopt = "0.3"
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+codegen-units = 1
