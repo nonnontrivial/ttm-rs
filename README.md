@@ -41,7 +41,7 @@ For example, `digraph.txt`
 Run using newline as tuple delimiter (default)
 
 ```shell
-cargo r -- -f ./digraph.txt
+ttm-rs -f ./digraph.txt
 ```
 
 prints to stdout
