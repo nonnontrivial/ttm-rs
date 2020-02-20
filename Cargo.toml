@@ -9,7 +9,7 @@ keywords = ["digraph", "tuple", "matrix", "cli"]
 license = "MIT"
 homepage = "https://github.com/nonnontrivial/ttm-rs"
 repository = "https://github.com/nonnontrivial/ttm-rs.git"
-categories = ["command-line-utilities", "data-structures", "file-system"]
+categories = ["command-line-utilities", "data-structures", "filesystem"]
 
 [dependencies]
 structopt = "0.3"
