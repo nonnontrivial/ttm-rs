@@ -8,6 +8,8 @@
 
 This is a hobby project in **early development**.
 
+> Tested on `cargo 1.42.0-nightly`
+
 ### Features
 - works with same args that [unix tsort](https://en.wikipedia.org/wiki/Tsort) accepts
 - works with `.txt` tuple input
