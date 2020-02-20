@@ -1,6 +1,6 @@
 use anyhow::Result;
-use ndarray::{array, Array2};
-use std::{fmt, fs};
+use ndarray::Array2;
+use std::fs;
 
 pub(crate) enum Source {
     Stdin,
@@ -48,7 +48,7 @@ impl Digraph {
             // TODO(nonnontrivial) implement
             (Source::Stdin, false) => unimplemented!(),
             (Source::Stdin, true) => unimplemented!(),
-            (Source::Files(paths), true) => unimplemented!(),
+            (Source::Files(_paths), true) => unimplemented!(),
             (Source::Files(paths), false) => {
                 for path in paths {
                     let tuples = self.parse_tuples(path)?;
@@ -109,6 +109,7 @@ impl Digraph {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use ndarray::array;
 
     #[test]
     fn matrix_build() {
