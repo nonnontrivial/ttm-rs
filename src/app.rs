@@ -4,7 +4,7 @@ use structopt::StructOpt;
 #[structopt(
     name = "ttm-rs",
     about = "
-        CLI tool for turning tuples into adjacency matrices
+        CLI to turn tuples into adjacency matrices
     "
 )]
 pub(crate) struct Opt {
