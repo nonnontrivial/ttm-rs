@@ -23,7 +23,6 @@ type Tuple = (u8, u8);
 #[derive(Debug)]
 pub(crate) struct Digraph {
     delimiter: String,
-    // matrix: Option<Array2<usize>>,
 }
 
 impl Digraph {
@@ -35,10 +34,7 @@ impl Digraph {
         } else {
             tuple_separator.unwrap()
         };
-        Ok(Digraph {
-            delimiter,
-            // matrix: None,
-        })
+        Ok(Digraph { delimiter })
     }
     /// Match on the source to determine if we receive stdin or an array of
     /// existing files; build matrices after processing source.
