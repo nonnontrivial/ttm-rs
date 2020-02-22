@@ -23,8 +23,8 @@ This is a hobby project in **early development**.
 ## Usage
 
 Given a source file containing a directed graph represented as source->target
-2-tuples, `ttm-rs` creates an adjacency matrix where `ij` is `1` when `i` has
-`j` as a target.
+2-tuples, `ttm-rs` creates an adjacency matrix where `ij` is `1` to indicate
+row `i` has column `j` as a target.
 
 ### Text file input
 
@@ -38,7 +38,7 @@ For example, `digraph.txt`
 3 1
 ```
 
-Run using newline as tuple delimiter (default)
+run using newline as tuple delimiter (default)
 
 ```shell
 ttm-rs -f ./digraph.txt
