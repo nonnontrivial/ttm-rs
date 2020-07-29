@@ -8,7 +8,7 @@ This is a CLI that turns tuples in a `.txt` file into _adjacency matrices_.
 
 > **Status**: This is a hobby project in **early development**.
 
-### Known Limitation
+### Known Limitations
 The following desirable features are not yet implemented.
 
 - works with same args that [unix tsort](https://en.wikipedia.org/wiki/Tsort) accepts
