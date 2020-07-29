@@ -5,6 +5,7 @@ mod app;
 mod input;
 
 pub(crate) use self::input::{Digraph, Source};
+
 use anyhow::Result;
 use structopt::StructOpt;
 

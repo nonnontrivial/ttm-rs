@@ -83,7 +83,6 @@ impl Digraph {
             if raw_token == "" {
                 continue;
             }
-            // TODO(nonnontrivial) find better way of parsing tuples
             let mut tuple: Tuple = (0, 0);
             let token: Vec<&str> = raw_token.split_whitespace().collect();
             for i in 0..token.len() {

@@ -2,19 +2,16 @@
 
 ![Rust](https://github.com/nonnontrivial/ttm-rs/workflows/Rust/badge.svg)
 
-> CLI to turn tuples into adjacency matrices
+## Purpose
 
-## Status
+This is a CLI that turns tuples in a `.txt` file into _adjacency matrices_.
 
-This is a hobby project in **early development**.
+> **Status**: This is a hobby project in **early development**.
 
-> Tested on `cargo 1.43.0-nightly`
+### Known Limitation
+The following desirable features are not yet implemented.
 
-### Features
 - works with same args that [unix tsort](https://en.wikipedia.org/wiki/Tsort) accepts
-- works with `.txt` tuple input
-
-### Future
 - works with `.md`, and `.json` file input
 - works with `stdin` tuple input
 - better formatting
