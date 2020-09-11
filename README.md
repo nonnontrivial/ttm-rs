@@ -9,6 +9,7 @@ This is a CLI that turns tuples in a `.txt` file into _adjacency matrices_.
 > **Status**: This is a hobby project in **early development**.
 
 ### Known Limitations
+
 The following desirable features are not yet implemented.
 
 - works with same args that [unix tsort](https://en.wikipedia.org/wiki/Tsort) accepts
@@ -19,11 +20,11 @@ The following desirable features are not yet implemented.
 
 ## Usage
 
-Given a source file containing a directed graph represented as source->target
-2-tuples, `ttm-rs` creates an adjacency matrix where `ij` is `1` to indicate
-row `i` has column `j` as a target.
+Given a source file containing a directed graph represented as newline-separated
+source-target 2-tuples, `ttm-rs` creates an adjacency matrix where `ij` is `1`
+when row `i` has column `j` as a target.
 
-### Text file input
+### Text File Input
 
 For example, `digraph.txt`
 
@@ -35,13 +36,13 @@ For example, `digraph.txt`
 3 1
 ```
 
-run using newline as tuple delimiter (default)
+passed under `-f` (file) flag
 
 ```shell
 ttm-rs -f ./digraph.txt
 ```
 
-prints to stdout
+prints to stdout:
 
 ```shell
 [[0, 0, 0, 1],
