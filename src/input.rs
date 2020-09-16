@@ -27,7 +27,7 @@ pub(crate) struct Digraph {
 
 impl Digraph {
     /// Create new instance using delimiter from command line, or newline char
-    /// in the case that it is none
+    /// in the case that it is none.
     pub(crate) fn new(tuple_separator: Option<String>) -> Result<Self> {
         let delimiter = if tuple_separator.is_none() {
             String::from("\n")
@@ -41,7 +41,7 @@ impl Digraph {
     pub(crate) fn build(&self, source: &Source, overwrite: bool) -> Result<()> {
         let mut matrices: Vec<Array2<u8>> = Vec::new();
         match (source, overwrite) {
-            // TODO(nonnontrivial) implement
+            // TODO Implement stdin and overwrite options.
             (Source::Stdin, false) => unimplemented!(),
             (Source::Stdin, true) => unimplemented!(),
             (Source::Files(_paths), true) => unimplemented!(),

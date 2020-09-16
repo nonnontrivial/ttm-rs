@@ -1,5 +1,6 @@
-#![warn(missing_debug_implementations, rust_2018_idioms, missing_docs)]
 //! Builds adjacency matrix out of tuples in given source.
+
+#![warn(missing_debug_implementations, rust_2018_idioms, missing_docs)]
 
 mod app;
 mod input;
